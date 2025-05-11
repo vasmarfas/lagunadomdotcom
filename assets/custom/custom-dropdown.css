@@ -1,0 +1,220 @@
+/* Custom dropdown styles for contacts */
+.navbar-right-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header--contacts {
+  position: relative;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.header--contacts .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.header--contacts .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.header--contacts .mbr-iconfont {
+  margin-left: 5px;
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.is_dropdown--wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  min-width: 250px;
+  margin-top: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.header--contacts:hover .is_dropdown--wrapper {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.is_dropdown--content {
+  padding: 15px;
+}
+
+.contact {
+  margin-bottom: 15px;
+}
+
+.contact--title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact--value {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.contact--value a {
+  display: inline-flex;
+  align-items: center;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact--value a:hover {
+  color: #000;
+}
+
+.contact--value .mbr-iconfont {
+  font-size: 20px;
+}
+
+/* Mobile styles */
+.header--actions_mobile {
+  display: none;
+}
+
+.mobile-contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-contact-button:hover {
+  opacity: 0.8;
+}
+
+.mobile-contact-button .mbr-iconfont {
+  font-size: 22px;
+  color: #333;
+}
+
+.mobile-contacts-container {
+  padding: 0 5px;
+}
+
+.mobile-contacts-container .contact {
+  margin-bottom: 15px;
+}
+
+.mobile-contacts-container .contact:last-child {
+  margin-bottom: 0;
+}
+
+.mobile-contacts-container .contact--values-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobile-contacts-container .contact--value {
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+.mobile-contacts-container .contact--value a {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.mobile-contacts-container .contact--value .mbr-iconfont {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: #666;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+/* Modal styles */
+.modal.fade .modal-dialog.mobile-bottom-sheet {
+  transform: translateY(100%);
+  transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog.mobile-bottom-sheet {
+  transform: translateY(0);
+}
+
+.mobile-bottom-sheet {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  width: 90%;
+  max-width: 450px;
+}
+
+.mobile-bottom-sheet .modal-content {
+  border-bottom-width: 0;
+  border-radius: 10px 10px 0 0;
+  height: auto;
+}
+
+.mobile-bottom-sheet .modal-header {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-bottom-sheet .modal-body {
+  padding: 15px;
+  padding-bottom: 15px;
+}
+
+/* Ensure the modal is sized correctly */
+.modal-dialog-centered.mobile-bottom-sheet {
+  align-items: flex-end;
+  min-height: auto !important;
+  height: auto !important;
+}
+
+/* Fix for modal animation */
+.modal.fade .modal-dialog.mobile-bottom-sheet {
+  transform: translate(-50%, 100%);
+}
+
+.modal.show .modal-dialog.mobile-bottom-sheet {
+  transform: translate(-50%, 0);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header--contacts {
+    display: none;
+  }
+  
+  .header--actions_mobile {
+    display: block;
+  }
+} 

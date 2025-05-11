@@ -1,0 +1,35 @@
+@font-face {
+   font-family: 'Cormorant SC';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 300;
+   src: url('file:///C:/Users/seel2/Desktop/Desktop/github/lagunadom/fonts/Cormorant SC/300.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Cormorant SC';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 500;
+   src: url('file:///C:/Users/seel2/Desktop/Desktop/github/lagunadom/fonts/Cormorant SC/500.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Cormorant SC';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 600;
+   src: url('file:///C:/Users/seel2/Desktop/Desktop/github/lagunadom/fonts/Cormorant SC/600.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Cormorant SC';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 700;
+   src: url('file:///C:/Users/seel2/Desktop/Desktop/github/lagunadom/fonts/Cormorant SC/700.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Cormorant SC';
+   font-style: regular;
+   font-display: swap;
+   font-weight: 400;
+   src: url('file:///C:/Users/seel2/Desktop/Desktop/github/lagunadom/fonts/Cormorant SC/regular.ttf') format('truetype');
+}
