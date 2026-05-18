@@ -1,6 +1,20 @@
 User-agent: *
-Disallow: /cgi-bin
-Disallow: info
-Disallow: info.html
-Disallow: contactsupperwidget.txt
-Disallow: contactsupperwidget
+Disallow: /cgi-bin/
+Disallow: /history/
+Disallow: /info.html
+Disallow: /yandex.html
+Disallow: /contactsupperwidget
+Disallow: /contactsupperwidget.txt
+Allow: /assets/
+
+User-agent: Yandex
+Disallow: /cgi-bin/
+Disallow: /history/
+Disallow: /info.html
+Disallow: /yandex.html
+Disallow: /contactsupperwidget
+Disallow: /contactsupperwidget.txt
+Allow: /assets/
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
+
+Sitemap: https://lagunadom.com/sitemap.xml
