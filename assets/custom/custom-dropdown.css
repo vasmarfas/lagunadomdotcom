@@ -361,18 +361,6 @@
   color: #ffffff;
 }
 
-.cookie-banner__btn--decline {
-  background-color: transparent;
-  border-color: #c19b76;
-  color: #9a7046;
-}
-
-.cookie-banner__btn--decline:hover,
-.cookie-banner__btn--decline:focus {
-  background-color: #f4eee3;
-  color: #5b4a33;
-}
-
 @media (max-width: 600px) {
   .cookie-banner {
     padding: 12px 14px;
