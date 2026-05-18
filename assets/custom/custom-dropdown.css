@@ -363,22 +363,24 @@
 
 @media (max-width: 600px) {
   .cookie-banner {
-    padding: 12px 14px;
+    padding: 10px 12px;
   }
   .cookie-banner__content {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: nowrap;
   }
   .cookie-banner__text {
     font-size: 12.5px;
+    line-height: 1.4;
+    flex: 1 1 auto;
   }
   .cookie-banner__actions {
-    justify-content: flex-end;
+    flex-shrink: 0;
   }
   .cookie-banner__btn {
-    flex: 1 1 auto;
-    text-align: center;
+    padding: 7px 14px;
+    font-size: 12.5px;
   }
 }
 
